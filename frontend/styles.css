@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #7f8c8d;
+    margin-top: 0;
+}
+
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+    padding: 20px;
+    border: 2px dashed #3498db;
+    border-radius: 10px;
+    background-color: #f8fafd;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+.results {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.image-preview {
+    flex: 1;
+    text-align: center;
+}
+
+#preview {
+    max-width: 100%;
+    max-height: 300px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: none;
+}
+
+.prediction {
+    flex: 1;
+}
+
+#digit-result {
+    font-size: 2.5em;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+#confidence-chart {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.confidence-bar {
+    background: #ecf0f1;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.bar-fill {
+    background: #3498db;
+    height: 20px;
+    transition: width 0.5s;
+}
+
+.digit-label {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.note {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #95a5a6;
+}
+
+@media (max-width: 768px) {
+    .results {
+        flex-direction: column;
+    }
+}

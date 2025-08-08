@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVHN Digit Classifier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Street View House Number Classifier</h1>
+        <p>Upload an image of a house number (0-9)</p>
+        
+        <div class="upload-container">
+            <input type="file" id="image-upload" accept="image/*">
+            <button id="predict-btn">Predict Digit</button>
+        </div>
+        
+        <div class="results">
+            <div class="image-preview">
+                <img id="preview" src="#" alt="Preview">
+            </div>
+            
+            <div class="prediction">
+                <h2>Prediction: <span id="digit-result">-</span></h2>
+                <div id="confidence-chart"></div>
+            </div>
+        </div>
+        
+        <div class="note">
+            <p>Note: This model was trained on the SVHN dataset (32x32 images)</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

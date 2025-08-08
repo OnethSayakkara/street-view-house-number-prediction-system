@@ -1,0 +1,27 @@
+# Virtual environment (THIS IS IMPORTANT!)
+venv/
+env/
+.env
+
+# Model files
+*.pth
+*.pkl
+*.joblib
+*.h5
+
+# Cache
+__pycache__/
+*.pyc
+
+# Data files
+*.csv
+data/
+datasets/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
